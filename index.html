@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Matheus Bertoi — Desenvolvedor Full-Stack, Consultor SAP B1 e Builder de SaaS" />
+  <title>Matheus Bertoi — Dev &amp; Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- PARTICLES -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- ========================
+     NAVIGATION
+======================== -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <img src="assets/logo.png" alt="MB Logo" class="nav-logo-img" />
+  </a>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#building">Em Dev</a></li>
+    <li><a href="#contact" class="nav-cta">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ========================
+     HERO
+======================== -->
+<section id="hero">
+  <div>
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Disponível para novos projetos
+    </div>
+
+    <h1>
+      Matheus<br />
+      <span class="gradient-text">Bertoi</span>
+    </h1>
+
+    <div class="typing-wrapper">
+      <span id="typed-text" class="typed-word"></span><span id="cursor">|</span>
+    </div>
+
+    <p class="hero-desc">
+      Consultor SAP B1 na RAMO e desenvolvedor full-stack na Bertoi Informática.
+      Transformo ideias em produtos reais — APIs robustas, SaaS completos e
+      automações com IA que resolvem problemas de verdade.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">
+        ◈ Ver Projetos
+      </a>
+      <a href="#contact" class="btn btn-outline">
+        → Falar comigo
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number reveal" data-target="4" data-suffix="+">4+</div>
+        <div class="stat-label">Projetos entregues</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number reveal" data-target="3" data-suffix="">3</div>
+        <div class="stat-label">SaaS em construção</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number reveal" data-target="5" data-suffix="+">5+</div>
+        <div class="stat-label">Tecnologias dominadas</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number reveal" data-target="100" data-suffix="%">100%</div>
+        <div class="stat-label">Foco em qualidade</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="arrow"></div>
+  </div>
+</section>
+
+<!-- ========================
+     ABOUT
+======================== -->
+<section id="about">
+  <div class="section-inner">
+    <span class="section-tag reveal">Sobre mim</span>
+    <h2 class="section-title reveal">Quem está por trás<br />do código</h2>
+
+    <div class="about-grid">
+      <div class="about-avatar-wrap reveal">
+        <div class="about-avatar">
+          <img src="assets/foto.jpg" alt="Matheus Garcia Bertoi" style="width:100%;height:100%;object-fit:cover;border-radius:22px;" />
+        </div>
+        <div class="avatar-ring"></div>
+        <div class="about-floating-badge">
+          👤 <span>MATHEUS GARCIA <strong>BERTOI</strong></span>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <div class="role-pill">⚡ Consultor SAP B1 · Desenvolvedor Full-Stack</div>
+        <p>
+          Sou Matheus Garcia Bertoi, consultor de SAP Business One na <strong style="color:var(--text)">RAMO</strong> e
+          desenvolvedor full-stack. Trabalho com tecnologia e ERP focado em algo simples:
+          resolver problemas reais de negócio de forma prática e eficiente.
+        </p>
+        <p>
+          Além da consultoria, também desenvolvo projetos próprios e soluções sob medida.
+          Já trabalhei em aplicações que vão desde analisadores de currículos com IA até
+          plataformas SaaS completas, com autenticação multi-tenant, dashboards analíticos
+          e automações. No dia a dia, costumo utilizar Python, FastAPI, Next.js e
+          integrações com modelos como Gemini e Claude.
+        </p>
+        <p>
+          Também faço parte da <strong style="color:var(--text)">Bertoi Informática</strong> como
+          desenvolvedor. Meu foco sempre foi construir software útil, estável e que
+          realmente faça diferença para quem usa.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item"><span class="icon">🐍</span> Python / FastAPI</div>
+          <div class="highlight-item"><span class="icon">⚛️</span> Next.js / React</div>
+          <div class="highlight-item"><span class="icon">🤖</span> IA: Gemini + Claude</div>
+          <div class="highlight-item"><span class="icon">🏢</span> SAP Business One</div>
+          <div class="highlight-item"><span class="icon">🐘</span> PostgreSQL / SQLite</div>
+          <div class="highlight-item"><span class="icon">☁️</span> Docker / Deploy cloud</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     SKILLS
+======================== -->
+<section id="skills">
+  <div class="section-inner">
+    <span class="section-tag reveal">Stack técnico</span>
+    <h2 class="section-title reveal">Tecnologias que<br />uso no dia a dia</h2>
+    <p class="section-subtitle reveal">
+      Ferramentas escolhidas a dedo para cada camada — do backend ao frontend,
+      do banco de dados ao modelo de IA.
+    </p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(59,130,246,.12)">🐍</div>
+          <div>
+            <div class="skill-card-title">Backend</div>
+            <div class="skill-card-sub">APIs robustas e escaláveis</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Python 3.12</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Uvicorn</span>
+          <span class="tag">SQLAlchemy</span>
+          <span class="tag">Pydantic v2</span>
+          <span class="tag">Celery</span>
+          <span class="tag">JWT / Auth</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(99,102,241,.12)">⚛️</div>
+          <div>
+            <div class="skill-card-title">Frontend</div>
+            <div class="skill-card-sub">Interfaces que impressionam</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Next.js 14</span>
+          <span class="tag">React</span>
+          <span class="tag">TailwindCSS</span>
+          <span class="tag">Radix UI</span>
+          <span class="tag">Recharts</span>
+          <span class="tag">Vanilla JS</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(245,158,11,.12)">🤖</div>
+          <div>
+            <div class="skill-card-title">IA &amp; LLMs</div>
+            <div class="skill-card-sub">Inteligência artificial aplicada</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Gemini 2.5</span>
+          <span class="tag">Claude Sonnet</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">JSON Schema</span>
+          <span class="tag">RAG básico</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(16,185,129,.12)">🐘</div>
+          <div>
+            <div class="skill-card-title">Dados &amp; Infra</div>
+            <div class="skill-card-sub">Persistência e deploy</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">PostgreSQL 16</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Alembic</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Railway / Render</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(239,68,68,.12)">🏢</div>
+          <div>
+            <div class="skill-card-title">SAP Business One</div>
+            <div class="skill-card-sub">ERP e consultoria</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">SAP B1</span>
+          <span class="tag">Service Layer</span>
+          <span class="tag">Escopos</span>
+          <span class="tag">Consultoria</span>
+          <span class="tag">Automação B1</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-icon" style="background:rgba(124,58,237,.12)">🛠️</div>
+          <div>
+            <div class="skill-card-title">Ferramentas</div>
+            <div class="skill-card-sub">Fluxo de desenvolvimento</div>
+          </div>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Prisma ORM</span>
+          <span class="tag">python-pptx</span>
+          <span class="tag">openpyxl</span>
+          <span class="tag">Gmail SMTP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     PROJECTS
+======================== -->
+<section id="projects">
+  <div class="section-inner">
+    <span class="section-tag reveal">Portfolio</span>
+    <h2 class="section-title reveal">Projetos entregues</h2>
+    <p class="section-subtitle reveal">
+      Produtos reais, com stack definida, problemas reais resolvidos.
+    </p>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="sap">SAP · RAMO</button>
+      <button class="filter-btn" data-filter="saas">SaaS</button>
+      <button class="filter-btn" data-filter="tool">Ferramenta</button>
+      <button class="filter-btn" data-filter="api">API / Backend</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Migração de Versão SAP B1 -->
+      <div class="project-card reveal" data-category="sap">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(34,197,94,.1)">🔄</div>
+          <span class="status-badge status-ramo">RAMO · Consultoria</span>
+        </div>
+        <h3 class="project-name">Migração de Versão SAP B1</h3>
+        <p class="project-desc">
+          Atualização do SAP Business One entre versões — análise de compatibilidade,
+          execução do upgrade, validação de add-ons e testes pós-migração. Garantia
+          de continuidade operacional durante todo o processo com impacto mínimo para
+          o cliente.
+        </p>
+        <div class="project-tech">
+          <span class="tag">SAP B1</span>
+          <span class="tag">Upgrade</span>
+          <span class="tag">Validação</span>
+          <span class="tag">Testes</span>
+          <span class="tag">Go-live</span>
+        </div>
+        <div class="project-footer">
+          <span>Análise · Execução · Validação · Suporte pós-go-live</span>
+          <span class="project-version" style="color:#22c55e">RAMO</span>
+        </div>
+      </div>
+
+      <!-- Migração de Ambiente -->
+      <div class="project-card reveal" data-category="sap">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(34,197,94,.1)">🖥️</div>
+          <span class="status-badge status-ramo">RAMO · Consultoria</span>
+        </div>
+        <h3 class="project-name">Migração de Ambiente SAP B1</h3>
+        <p class="project-desc">
+          Migração completa de ambiente SAP Business One entre servidores — transferência
+          de dados, reconfiguração de usuários, licenças e parâmetros do sistema.
+          Atendimento a clientes que precisam trocar de infraestrutura mantendo
+          todo o histórico operacional intacto.
+        </p>
+        <div class="project-tech">
+          <span class="tag">SAP B1</span>
+          <span class="tag">Infraestrutura</span>
+          <span class="tag">Backup</span>
+          <span class="tag">Restore</span>
+          <span class="tag">Licenciamento</span>
+        </div>
+        <div class="project-footer">
+          <span>Servidor origem → destino · Zero perda de dados</span>
+          <span class="project-version" style="color:#22c55e">RAMO</span>
+        </div>
+      </div>
+
+      <!-- Migração SQL Server → HANA -->
+      <div class="project-card reveal" data-category="sap">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(34,197,94,.1)">🗄️</div>
+          <span class="status-badge status-ramo">RAMO · Consultoria</span>
+        </div>
+        <h3 class="project-name">Migração SQL Server → SAP HANA</h3>
+        <p class="project-desc">
+          Migração de base de dados do SAP B1 de SQL Server para SAP HANA —
+          processo crítico que exige mapeamento rigoroso de dados, validação de
+          integridade e testes extensivos. Resultado: performance superior e
+          aproveitamento pleno das capacidades analíticas do HANA.
+        </p>
+        <div class="project-tech">
+          <span class="tag">SAP HANA</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">SAP B1</span>
+          <span class="tag">ETL</span>
+          <span class="tag">Integridade de dados</span>
+        </div>
+        <div class="project-footer">
+          <span>SQL Server → HANA · Performance + Analytics</span>
+          <span class="project-version" style="color:#22c55e">RAMO</span>
+        </div>
+      </div>
+
+      <!-- Add-ons SAP B1 -->
+      <div class="project-card reveal" data-category="sap">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(34,197,94,.1)">🧩</div>
+          <span class="status-badge status-ramo">RAMO · Consultoria</span>
+        </div>
+        <h3 class="project-name">Implementação de Add-ons SAP B1</h3>
+        <p class="project-desc">
+          Instalação, configuração e atualização de add-ons no SAP Business One —
+          extensões que ampliam as funcionalidades nativas do sistema para atender
+          necessidades específicas de cada cliente, com validação de compatibilidade
+          de versão e testes em ambiente de homologação.
+        </p>
+        <div class="project-tech">
+          <span class="tag">SAP B1</span>
+          <span class="tag">Add-ons</span>
+          <span class="tag">Homologação</span>
+          <span class="tag">Configuração</span>
+          <span class="tag">Compatibilidade</span>
+        </div>
+        <div class="project-footer">
+          <span>Instalação · Configuração · Validação de versão</span>
+          <span class="project-version" style="color:#22c55e">RAMO</span>
+        </div>
+      </div>
+
+      <!-- CoreExtract -->
+      <div class="project-card reveal" data-category="tool">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(0,212,255,.1)">🎯</div>
+          <span class="status-badge status-v2">v2.2 Estável</span>
+        </div>
+        <h3 class="project-name">CoreExtract</h3>
+        <p class="project-desc">
+          Extrator inteligente de currículos com triagem automática por IA. Upload de PDF/DOCX
+          → Gemini extrai dados estruturados → e-mail de triagem enviado automaticamente.
+          Multi-tenant com auth JWT, painel superadmin e dashboard analítico Streamlit.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Python 3.12</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Gemini 2.5</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Gmail SMTP</span>
+          <span class="tag">Streamlit</span>
+        </div>
+        <div class="project-footer">
+          <span>Auth multi-tenant · Triagem automática · Excel report</span>
+          <span class="project-version">v2.2</span>
+        </div>
+      </div>
+
+      <!-- Leitor de Escopo SAP B1 -->
+      <div class="project-card reveal" data-category="tool">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(34,197,94,.1)">📊</div>
+          <span class="status-badge status-stable">Concluído</span>
+        </div>
+        <h3 class="project-name">Leitor de Escopo SAP B1</h3>
+        <p class="project-desc">
+          Ferramenta para consultores RAMO: upload do escopo do projeto SAP B1
+          (PDF/DOCX/TXT) → Claude analisa com base de conhecimento SAP → gera resumo
+          para consultor + apresentação PowerPoint de 12 slides profissionais.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Claude Sonnet</span>
+          <span class="tag">python-pptx</span>
+          <span class="tag">SAP B1</span>
+        </div>
+        <div class="project-footer">
+          <span>12 slides gerados · PPTX automático · Base SAP B1</span>
+          <span class="project-version">v1.0</span>
+        </div>
+      </div>
+
+      <!-- Bertoi Tech -->
+      <div class="project-card reveal" data-category="saas">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(245,158,11,.1)">✂️</div>
+          <span class="status-badge status-dev">Em evolução</span>
+        </div>
+        <h3 class="project-name">Bertoi Tech</h3>
+        <p class="project-desc">
+          CRM SaaS premium para barbearias focado em fidelização e retenção de clientes.
+          Dashboard com KPIs, ranking de barbeiros, automações WhatsApp, sistema de
+          pontos/gamificação e insights de churn por IA.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Next.js 14</span>
+          <span class="tag">TailwindCSS</span>
+          <span class="tag">Recharts</span>
+          <span class="tag">Prisma</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Radix UI</span>
+        </div>
+        <div class="project-footer">
+          <span>9 páginas · Dark premium · Multi-tenant pronto</span>
+          <span class="project-version">MVP</span>
+        </div>
+      </div>
+
+      <!-- DataBridge -->
+      <div class="project-card reveal" data-category="api">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(124,58,237,.1)">🔗</div>
+          <span class="status-badge status-dev">Em construção</span>
+        </div>
+        <h3 class="project-name">DataBridge</h3>
+        <p class="project-desc">
+          Plataforma universal de integração de dados e analytics. Conecta qualquer sistema
+          externo (ERP, CRM, APIs) e expõe métricas prontas para dashboards e apps mobile.
+          Arquitetura async com conectores plugáveis e motor de métricas de negócio.
+        </p>
+        <div class="project-tech">
+          <span class="tag">Python 3.11</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Celery</span>
+          <span class="tag">Docker</span>
+          <span class="tag">SAP B1</span>
+        </div>
+        <div class="project-footer">
+          <span>Async · Multi-tenant · Conectores plugáveis</span>
+          <span class="project-version">Parte 1 ✓</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     EM DESENVOLVIMENTO
+======================== -->
+<section id="building">
+  <div class="section-inner">
+    <span class="section-tag reveal">O que estou construindo</span>
+    <h2 class="section-title reveal">Projetos em<br />desenvolvimento ativo</h2>
+    <p class="section-subtitle reveal">
+      Produtos que estão sendo construídos agora, parte por parte, com foco em entregar
+      valor real desde o primeiro deploy.
+    </p>
+
+    <div class="timeline reveal">
+
+      <div class="timeline-item">
+        <div class="timeline-label">SaaS · Next.js 14</div>
+        <div class="timeline-title">Bertoi Tech — CRM para Barbearias</div>
+        <div class="timeline-desc">
+          Plataforma SaaS de gestão e fidelização para barbearias. Interface dark premium
+          com âmbar, 9 páginas completas, dados mock realistas, schema Prisma multi-tenant
+          e integração WhatsApp em andamento via Evolution API.
+        </div>
+        <div class="timeline-progress">
+          <div class="timeline-bar" data-width="65%"></div>
+        </div>
+        <div class="timeline-progress-label">
+          <span>MVP completo · Deploy pendente</span>
+          <span>65%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Plataforma · Python + FastAPI</div>
+        <div class="timeline-title">DataBridge — Integração Universal de Dados</div>
+        <div class="timeline-desc">
+          Camada de dados que conecta ERP, CRM e APIs externas. Parte 1 entregue (fundação
+          Docker + estrutura + BaseConnector). Roadmap: banco de dados, auth multi-tenant,
+          conector SAP B1, motor de métricas e API de analytics.
+        </div>
+        <div class="timeline-progress">
+          <div class="timeline-bar" data-width="20%"></div>
+        </div>
+        <div class="timeline-progress-label">
+          <span>Parte 1 de 8 concluída</span>
+          <span>20%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Produto · FastAPI + Gemini</div>
+        <div class="timeline-title">CoreExtract — Deploy &amp; Evolução Web</div>
+        <div class="timeline-desc">
+          Versão v2.2 local estável com auth multi-tenant. Próximos passos: Dockerfile,
+          deploy Railway/Render, isolamento do dashboard por empresa e configuração
+          de SMTP por tenant.
+        </div>
+        <div class="timeline-progress">
+          <div class="timeline-bar" data-width="80%"></div>
+        </div>
+        <div class="timeline-progress-label">
+          <span>v2.2 local · Deploy em andamento</span>
+          <span>80%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     CONTACT
+======================== -->
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-tag reveal">Contato</span>
+    <h2 class="section-title reveal">Vamos construir<br />algo juntos?</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>
+          Estou disponível para novos projetos, parcerias e consultorias.
+          Se você tem uma ideia que precisa sair do papel, vamos conversar.
+        </p>
+        <p>
+          Atendo tanto projetos pontuais quanto contratos de longo prazo —
+          desde MVPs rápidos até plataformas completas.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:matheusbertoi080@gmail.com" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(0,212,255,.1)">✉️</div>
+            <div class="contact-link-text">
+              <strong>E-mail</strong>
+              <span>matheusbertoi080@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/MatGarciaBertoi" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(255,255,255,.06)">⌥</div>
+            <div class="contact-link-text">
+              <strong>GitHub</strong>
+              <span>Ver repositórios</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/matheusgarciabertoi" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(10,102,194,.15)">💼</div>
+            <div class="contact-link-text">
+              <strong>LinkedIn</strong>
+              <span>Perfil profissional</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="form-security-note">
+          <span class="form-security-icon">🔒</span>
+          <div>
+            <strong>Como sua mensagem é enviada</strong>
+            <p>
+              Ao clicar em "Enviar Mensagem", seus dados são transmitidos de forma segura
+              via <strong>Formspree</strong> — um serviço dedicado ao envio de formulários
+              web. Sua mensagem chega diretamente no meu e-mail pessoal.
+              Nenhuma informação é armazenada em servidores próprios ou compartilhada
+              com terceiros. Você não será adicionado a nenhuma lista de contatos ou
+              newsletter.
+            </p>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xojroozl" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Ex: Desenvolvimento de SaaS" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Conte sobre seu projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+======================== -->
+<footer>
+  <img src="assets/logo.png" alt="MB Logo" style="height:48px;width:auto;margin-bottom:.5rem;filter:drop-shadow(0 0 8px rgba(0,212,255,.3))" />
+  <p>© 2026 Matheus Garcia Bertoi</p>
+  <p style="margin-top:.4rem">Consultor SAP B1 na RAMO · Desenvolvedor na Bertoi Informática</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
