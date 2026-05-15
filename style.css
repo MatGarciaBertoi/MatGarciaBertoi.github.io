@@ -496,6 +496,7 @@ section { position: relative; z-index: 1; }
   background: linear-gradient(135deg, rgba(0,212,255,.04), rgba(124,58,237,.04));
   opacity: 0;
   transition: opacity var(--trans);
+  pointer-events: none;
 }
 .project-card:hover { border-color: rgba(0,212,255,.3); transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.4); }
 .project-card:hover::before { opacity: 1; }
